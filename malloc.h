@@ -7,16 +7,18 @@
 #include <unistd.h>
 #include <sys/mman.h>
 
-#define HEAP_MAX 1024*10
+#define HEAP_MAX (1024 * 10)
 
-typedef struct MemChunkHeader{
-    size_t size;
-    struct MemChunkHeader *next;
+typedef struct MemChunkHeader
+{
+	size_t size;
+	struct MemChunkHeader *next;
 } MemChunkHeader;
 
-typedef struct MemControlBlock { 
-    int32_t is_available; 
-    int32_t size;
+typedef struct MemControlBlock
+{
+	int32_t is_available;
+	int32_t size;
 } MemControlBlock;
 
 extern int32_t has_initialized;
