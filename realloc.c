@@ -14,12 +14,12 @@ void *_realloc(void *ptr, size_t size)
 
 	if (ptr >= managed_memory_start && ptr <= last_valid_address)
 	{
-		p = ptr - sizeof(MemControlBlock);
+		p = (char *)ptr - sizeof(MemControlBlock);
 		src_size = ((MemControlBlock *)p)->size - sizeof(MemControlBlock);
 	}
 	else
 	{
-		p = ptr - sizeof(MemChunkHeader);
+		p = (char *)ptr - sizeof(MemChunkHeader);
 		src_size = ((MemChunkHeader *)p)->size - sizeof(MemChunkHeader);
 	}
 	if (size <= src_size)

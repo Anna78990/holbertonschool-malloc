@@ -13,7 +13,6 @@ int main(void)
 {
     char *str;
     void *chunk;
-    int *a;
 
     printf("Starting break is %p\n", sbrk(0));
 
@@ -26,10 +25,6 @@ int main(void)
     chunk = (void *)(str - sizeof(size_t));
     printf("chunk size is %lu\n", *((size_t *)chunk));
     _free(str);
-    a = (int *)_calloc(5, sizeof(int));
-    a[1] = 1;
-    printf("a[0] is %d\n", a[0]);
-    printf("a[1] is %d\n", a[1]);
     printf("Final break is %p\n", sbrk(0));
     return (EXIT_SUCCESS);
 }
