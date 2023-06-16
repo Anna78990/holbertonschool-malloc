@@ -9,12 +9,26 @@
 
 #define HEAP_MAX (1024 * 10)
 
+#define PAGE_SIZE 4096
+
+/**
+ * struct MemChunkHeader - chunk of malloced memory
+ *
+ * @size: size of allocated memory
+ * @next: next memory adress
+ */
 typedef struct MemChunkHeader
 {
 	size_t size;
 	struct MemChunkHeader *next;
 } MemChunkHeader;
 
+/**
+ * struct MemControlBlock - structure for check if memory is available
+ *
+ * @is_available: check if it is available
+ * @size: size of memory block
+ */
 typedef struct MemControlBlock
 {
 	int32_t is_available;
