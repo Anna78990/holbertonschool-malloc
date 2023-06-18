@@ -26,7 +26,7 @@ void free_brk(void *ptr)
 		sbrk(0 - acc_empty);
 		last_valid_address = sbrk(0);
 	}
-} 
+}
 
 void _free(void *ptr)
 {
