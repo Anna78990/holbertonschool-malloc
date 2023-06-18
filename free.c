@@ -4,6 +4,11 @@ void *managed_memory_start;
 void *last_valid_address;
 MemChunkHeader top_header;
 
+/**
+ * free_brk - free break point
+ *
+ * @ptr: pointer to memory
+ */
 void free_brk(void *ptr)
 {
 	void *p;
@@ -28,6 +33,10 @@ void free_brk(void *ptr)
 	}
 }
 
+/**
+ * _free - free allocated memories
+ * @ptr: pointer to the given memories
+ */
 void _free(void *ptr)
 {
 	MemChunkHeader *p;
