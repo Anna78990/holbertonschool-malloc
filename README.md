@@ -13,7 +13,7 @@ The same usage to the original functions.<br>
 <li><i>_calloc(size_t n_items, size_t size)</i></li>
 <li><i>_free(void *ptr)</i></li>
 </ul>
-Test:
+Test:<br>
 <img src="https://i.postimg.cc/LXb1q9Yt/Capture-d-e-cran-2023-07-12-a-08-16-48.png">
-Output:
+Output:<br>
 <img src="https://i.postimg.cc/d0dsRJxR/Capture-d-e-cran-2023-07-12-a-08-17-13.png">
