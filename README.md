@@ -5,5 +5,9 @@ In this library you can use:<br><br>
 <li><i>_malloc</i>(allocates memory for the bytes passed as arguments)<br></li>
 <li><i>_free</i>(free the memory at the address passed as an argument)<br></li>
 <li><i>_calloc</i>(allocate a specified amount of memory and then initialize it to zero)<br></li>
-<li><i>_realloc</i>(resize the memory block given to the argument)</li>
-</ul>
+<BR>
+<h1>Usage:</h1>
+The same usage to the original functions.
+<i>_malloc(size_t size)</i>
+<i>_calloc(size_t n_items, size_t size)</i>
+<i>_free(void *ptr)</i>
