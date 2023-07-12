@@ -7,7 +7,9 @@ In this library you can use:<br><br>
 <li><i>_calloc</i>(allocate a specified amount of memory and then initialize it to zero)<br></li>
 <BR>
 <h1>Usage:</h1>
-The same usage to the original functions.
-<i>_malloc(size_t size)</i>
-<i>_calloc(size_t n_items, size_t size)</i>
-<i>_free(void *ptr)</i>
+The same usage to the original functions.<br>
+<ul>
+<li><i>_malloc(size_t size)</i></li>
+<li><i>_calloc(size_t n_items, size_t size)</i></li>
+<li><i>_free(void *ptr)</i></li>
+</ul>
